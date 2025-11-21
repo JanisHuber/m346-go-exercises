@@ -3,26 +3,40 @@ package main
 import "fmt"
 
 type FullName struct {
-	// TODO: add fields
+	FirstName string
+	LastName  string
 }
 
-// TODO: declare a structure for birth date
+type BirthDate struct {
+	Day   byte
+	Month byte
+	Year  uint16
+}
 
 type Profile struct {
-	// TODO: embed full name and birth date information
+	FullName         FullName
+	BirthDate        BirthDate
 	NumberOfSiblings byte
 	ZodiacSign       rune
 }
 
 func main() {
 	var me = Profile{
-		// TODO: set name and birth date information
-		NumberOfSiblings: 0,   // TODO: adjust
-		ZodiacSign:       ' ', // TODO: adjust
+		FullName: FullName{
+			FirstName: "Janis",
+			LastName:  "Huber",
+		},
+		BirthDate: BirthDate{
+			Day:   15,
+			Month: 9,
+			Year:  2007,
+		},
+		NumberOfSiblings: 1,
+		ZodiacSign:       'J',
 	}
 	fmt.Println(me)
 
 	fmt.Println("Siblings Before:", me.NumberOfSiblings)
-	// TODO: imagine, you get a little brother or sister
+	me.NumberOfSiblings = 2
 	fmt.Println("Siblings After:", me.NumberOfSiblings)
 }
