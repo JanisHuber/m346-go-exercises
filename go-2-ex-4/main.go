@@ -37,10 +37,3 @@ func main() {
 	// TODO: output everything using fmt.Println()
 	fmt.Println(modules)
 }
-
-// Ein Schüler (Student) hat einen Vor- und Nachnamen.
-//Eine Klasse (Class) besteht aus einer Reihe von Schülern.
-//Ein Modul hat eine eindeutige Nummer (z.B. 346) und wird von einer Reihe von Klassen besucht.
-//Erstelle die notwendigen Datenstrukturen mit entsprechenden Beispieldaten (d.h. mindestens zwei Klassen mit je drei
-//Schülern und mindestens drei Module, die von einer oder mehreren Klassen besucht werden). Gib die Daten anschliessend
-//per fmt.Println() auf die Konsole aus.
