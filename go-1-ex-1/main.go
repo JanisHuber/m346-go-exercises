@@ -10,7 +10,7 @@ func main() {
 	var yearOfBirth int = 2007
 	var numberOfSiblings int = 1
 	var heightInMeters float32 = 1.70
-	var zodiacSign byte = 'J'
+	var zodiacSign rune = '\U+264D'
 
 	fmt.Printf("Vor- und Nachname: %s %s\n", firstName, lastName)
 	fmt.Printf("Geburtsdatum: %d.%d.%d\n", dayOfBirth, monthOfBirth, yearOfBirth)
