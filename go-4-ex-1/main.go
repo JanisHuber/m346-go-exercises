@@ -22,6 +22,6 @@ func main() {
 	}()
 	var grade float32 = computeGrade(21, 20)
 	// Why is it such a complicated expression instead of just a try and catch block?
-	// And which languages named it exeptions "panic" hahaha
+	// And which language named it exeptions "panic" hahaha
 	fmt.Printf("%.2f\n", grade)
 }
